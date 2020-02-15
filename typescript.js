@@ -1,0 +1,19 @@
+module.exports = {
+    extends  : ['./js-syntax', 'plugin:@typescript-eslint/eslint-recommended', 'plugin:@typescript-eslint/recommended'],
+    parser   : '@typescript-eslint/parser',
+    plugins  : ['@typescript-eslint', 'prettier'],
+    settings : {
+        'import/parsers' : {
+            '@typescript-eslint/parser' : ['.ts', '.tsx'],
+        },
+        'import/resolver' : {
+            typescript : {},
+        },
+    },
+    parserOptions : {
+        ecmaVersion : 2018,
+        sourceType  : 'module'
+    },
+    rules : {
+    },
+}
