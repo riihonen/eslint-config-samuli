@@ -13,7 +13,7 @@ module.exports = {
         'space-before-function-paren' : ['error', 'never'],
         'space-infix-ops'             : ['error', { int32Hint : false }],
         'comma-spacing'               : ['error', { before : false, after : true }],
-        'no-console'                  : [0],
+        'no-console'                  : ['warn'],
         'quote-props'                 : ['error', 'as-needed'],
         'guard-for-in'                : 'error',
         'prefer-arrow-callback'       : 'error',

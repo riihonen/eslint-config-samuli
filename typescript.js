@@ -1,5 +1,5 @@
 module.exports = {
-    extends  : ['./js-syntax', 'plugin:@typescript-eslint/eslint-recommended', 'plugin:@typescript-eslint/recommended'],
+    extends  : ['plugin:@typescript-eslint/eslint-recommended', 'plugin:@typescript-eslint/recommended', 'eslint-config-samuli/js-syntax'],
     parser   : '@typescript-eslint/parser',
     plugins  : ['@typescript-eslint', 'prettier'],
     settings : {
@@ -13,7 +13,5 @@ module.exports = {
     parserOptions : {
         ecmaVersion : 2018,
         sourceType  : 'module'
-    },
-    rules : {
     },
 }

@@ -1,6 +1,6 @@
 module.exports = {
-
-    env : {
+    parser : 'babel-eslint',
+    env    : {
         browser : true,
         es6     : true
     },
@@ -8,14 +8,11 @@ module.exports = {
         'plugin:react/recommended',
         'plugin:import/errors',
         'plugin:import/warnings',
-        './js-syntax'
+        'eslint-config-samuli/js-syntax'
     ],
     settings : {
         react : {
-            createClass : 'createReactClass', // Regex for Component Factory to use,
-            pragma      : 'React',  // Pragma to use, default to "React"
-            version     : '16.6', // React version, default to the latest React stable release
-            flowVersion : '0.53' // Flow version
+            version : 'detect' // React version, default to the latest React stable release
         },
         propWrapperFunctions : [ 'forbidExtraProps' ] // The names of any functions used to wrap the
         // propTypes object, e.g. `forbidExtraProps`.
@@ -31,8 +28,8 @@ module.exports = {
         'react'
     ],
 
-    rules : {
-        'react/prop-types'          : [0],
-        'react/no-unknown-property' : [1, { ignore : [] }],
+    rules : {        
+        // 'react/prop-types'          : ['error'],
+        // 'react/no-unknown-property' : ['error', { ignore : [] }],
     }
 }
