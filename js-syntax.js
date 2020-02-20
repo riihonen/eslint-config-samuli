@@ -21,6 +21,8 @@ module.exports = {
         'prefer-template'             : 'error',
         'template-curly-spacing'      : ['error', 'always'],
         'prefer-const'                : 'error',
+        'no-trailing-spaces'          : 'error',
+        'no-multi-spaces'             : ['error', { exceptions : { VariableDeclarator : true } }],
         'keyword-spacing'             : [
             'error', {
                 before    : true,
