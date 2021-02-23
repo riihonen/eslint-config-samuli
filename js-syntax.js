@@ -23,6 +23,8 @@ module.exports = {
         'prefer-const'                : 'error',
         'no-trailing-spaces'          : 'error',
         'no-multi-spaces'             : ['error', { exceptions : { VariableDeclarator : true } }],
+        'no-unused-vars'                    : ['warn', { argsIgnorePattern : '^_' }],
+        '@typescript-eslint/no-unused-vars' : ['warn', { argsIgnorePattern : '^_' }],
         'keyword-spacing'             : [
             'error', {
                 before    : true,
