@@ -13,9 +13,10 @@
     "typescript": "^3.7.5"
   },
   "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": ">= 2",
     "eslint": ">= 6",
+    "eslint-plugin-no-autofix": "^1.2.3",
     "prettier": ">= 1",
-    "typescript": ">= 3",
-    "@typescript-eslint/eslint-plugin": ">= 2"
+    "typescript": ">= 3"
   }
 }

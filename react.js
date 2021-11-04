@@ -20,7 +20,7 @@ module.exports = {
         // a function will be skipped.
     },
     parserOptions : {
-        ecmaFeatures : { jsx : true },        
+        ecmaFeatures : { jsx : true },
         ecmaVersion  : 2018,
         sourceType   : 'module'
     },
@@ -28,7 +28,7 @@ module.exports = {
         'react'
     ],
 
-    rules : {        
+    rules : {
         // 'react/prop-types'          : ['error'],
         // 'react/no-unknown-property' : ['error', { ignore : [] }],
     }
